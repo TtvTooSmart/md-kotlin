@@ -3,6 +3,8 @@ buildscript {
 
 
     ext.kotlin_version = "1.4.31"
+    ext.kotlin_version = '<kotlin-version>'
+    ext.android_plugin_version = '2.2.0-alpha4'
     repositories {
         google()
         jcenter()
@@ -13,9 +15,12 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
         classpath 'com.google.gms:google-services:4.3.10'
+        classpath "com.android.tools.build:gradle:$android_plugin_version"
 
 
     }
+
+
 }
 
 plugins {

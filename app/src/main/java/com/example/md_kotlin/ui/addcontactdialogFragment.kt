@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.example.md_kotlin.R
 import com.example.md_kotlin.data.contact
 import com.example.md_kotlin.databinding.FragmentAddcontactdialogBinding
@@ -33,7 +33,7 @@ class addcontactdialogFragment : DialogFragment() {
         // Inflate the layout for this fragment
         _binding = FragmentAddcontactdialogBinding.inflate(inflater, container, false)
 
-        viewModel = ViewModelProviders.of(this).get(contactviewmodel::class.java)
+        viewModel = ViewModelProvider(this)[contactviewmodel::class.java]
         return binding.root
     }
 
