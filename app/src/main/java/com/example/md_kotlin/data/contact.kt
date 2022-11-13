@@ -1,4 +1,11 @@
 package com.example.md_kotlin.data
 
-class contact {
+import com.google.firebase.database.Exclude
+
+data class contact(
+    @get:Exclude
+    var id: String? = null,
+    var fullname: String? = null,
+    var contact: String? = null
+) {
 }

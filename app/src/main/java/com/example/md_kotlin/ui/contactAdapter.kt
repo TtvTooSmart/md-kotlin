@@ -21,7 +21,7 @@ class contactAdapter: RecyclerView.Adapter<contactAdapter.ViewHolder>(){
     override fun getItemCount(): Int {
         return contacts.size
     }
-    inner class ViewHolder(val binding: RecycleViewContactBinding): RecyclerView.ViewHolder(binding.root){
+    inner class ViewHolder(binding: RecycleViewContactBinding): RecyclerView.ViewHolder(binding.root){
 
     }
 }

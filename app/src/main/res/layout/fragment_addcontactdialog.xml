@@ -28,7 +28,11 @@
             android:id="@+id/edit_text_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/add_full_name"/>
+            android:hint="@string/add_full_name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:autofillHints="name"/>
+
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,26 +48,32 @@
             android:id="@+id/edit_text_Contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/add_contact_number"/>
+            android:hint="@string/add_contact_number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/black"
+            android:autofillHints="phone"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input_layout_org_code"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/input_layout_org_code"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="10dp"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_org_code"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/org_code"/>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/edit_text_org_code"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/org_code"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="@color/black" />-->
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
     <Button
         android:id="@+id/button_add"

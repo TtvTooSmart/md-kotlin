@@ -7,4 +7,6 @@
     <string name="add_contact_number">Contact Number</string>
     <string name="org_code">Organization code</string>
     <string name="save_contact">Save Contact</string>
+    <string name="added_contact">caontact has been added succesfully</string>
+    <string name="error">%1$s</string>
 </resources>

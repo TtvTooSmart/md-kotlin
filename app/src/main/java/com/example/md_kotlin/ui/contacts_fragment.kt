@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.md_kotlin.R
+import com.example.md_kotlin.databinding.FragmentContactBinding
 
 
 class contacts_fragment : Fragment() {
 
-    private var _binding: null
+    private var _binding: FragmentContactBinding? = null
     private val binding get() = _binding!!
 
+    private var adapter = contactAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,7 @@ class contacts_fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = contacts_fragment.inflate(inflater,container,false)
+        _binding = FragmentContactBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -31,9 +33,8 @@ class contacts_fragment : Fragment() {
 
         binding.recyclerViewContacts.adapter = adapter
 
-        binding.addButton.setOnClickListener{
-            addcontactdialogFragment().show(childFragmentManager,"")
-
+        binding.addButton.setOnClickListener {
+            addcontactdialogFragment().show(childFragmentManager, "")
         }
     }
 
